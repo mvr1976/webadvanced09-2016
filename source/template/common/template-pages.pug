@@ -1,0 +1,47 @@
+block variables
+
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    title #{title}
+    meta(content="Max" name="author")
+    meta(content="project N1 webdev advanced course" name="description")
+    meta(content="loftschool, DZ1, advanced course" name="keywords")
+    meta(content="width=device-width, initial-scale=1" name="viewport")
+    meta(content="ie=edge" http-equiv="x-ua-compatible")
+
+    //- favicon block start
+    link(href="favicon.ico" rel="shortcut icon" type="image/x-icon")
+    //- favicon block end
+
+    link(rel='stylesheet' href='/assets/css/foundation.css')
+    //- link(rel='stylesheet' href='../bower_components/font-awesome/css/font-awesome.css')
+    link(rel='stylesheet' href='assets/css/app.css')
+    link(rel='stylesheet' href='assets/fonts/fonts.css')
+    script(src='/assets/js/foundation.js' defer)
+    script(src='assets/js/app.js' defer)
+
+    <!--[if lt IE 9]>
+    script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
+    <![endif]-->
+
+  body
+    div.parallax-bg
+        div.triangles-container            
+            i.button-down(class="fa fa-chevron-down fa-2x" aria-hidden="true")                
+            svg(class="triangles" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" viewBox="0 0 1800 150" preserveAspectRatio="none")
+                polygon(points="0,0 0,150 900,150 900,147" fill="white")
+                polygon(points="1800,0   1800,150   900,150 900,147" fill="white")
+        div.header-socials-container
+            //- include ../common/_social-icons
+            ul.social-icons-list.social-icons-list--welcome
+                each val, index in {"fa fa-vk fa-2x":'https://vk.com',"fa fa-github-alt fa-2x":'https://github.com',"fa fa-linkedin fa-2x":'https://linkedin.com'}
+                    li.social-icons__item
+                        a.social-icons__link(href= val, target= "blank")
+                            i.social-icons__pic--pages(class= index aria-hidden="true") 
+        include ../common/hamburger
+        include ../common/avatar-block
+        include ../common/modal-win
+    block content
+    

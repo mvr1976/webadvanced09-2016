@@ -1,0 +1,51 @@
+.flip-side--back{
+	position: absolute;
+	top: 0;
+	left: 0;	
+	background: rgba(255,255,255,.7);
+  	transform: rotateY(180deg);
+	transition: 1s;
+	border-radius: 5px;	
+}
+.flip-side--back__title{
+	margin: 35px 0;
+}
+.flip-side--back__form{
+	margin-bottom: 20px;
+	position: relative;
+	.label{
+		// display: inline-block;
+		// margin-bottom: 15px;
+	}
+	.input{		
+		width:87%;
+		height:45px;
+		text-indent: 20px;
+		border-radius: 5px;
+		background-color:#fff;		
+		border: 0;
+	}
+	.login-key{
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+}
+
+
+
+.flip-side--back__check{
+	margin-bottom: 20px;
+}        
+.flip-side--back__check-2{
+	margin-bottom: 20px;
+} 
+.flip-side--back__radio{
+	margin-bottom: 20px;
+}
+.radio{
+
+}
+.flip-side__nav-item.flip-side--back__nav-item{
+	width: 50%;
+}

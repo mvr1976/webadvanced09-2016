@@ -1,0 +1,25 @@
+div.footer-pages.footer-pages--map
+    div.footer-pages__top.footer-pages__top--map
+        nav.footer-pages__nav
+            ul.footer-pages__list
+                each val, index in {'Мои работы':'works.html', 'Обо мне':'about-me.html', 'Блог':'blog.html', 'Авторизация':'index.html'}
+                    li.footer-pages__item
+                        a.footer-pages__link(href= val)=index
+        ul.footer-socials
+            li.footer-socials__item
+                a.footer-socials__link
+                    svg(class="svg-vk_round-dims svg_footer vk" width="50px" height="50px" viewBox="0 0 50 50")
+                        use(xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/img/sprite.svg#vk_round")                    
+            li.footer-socials__item
+                a.footer-socials__link
+                    svg(class="svg-github_round-dims svg_footer github" width="50px" height="50px" viewBox="0 0 50 50")
+                        use(xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/img/sprite.svg#github_round")
+            li.footer-socials__item
+                a.footer-socials__link
+                    svg(class="svg-in_round-dims svg_footer linkedin" width="50px" height="50px" viewBox="0 0 50 50")
+                        use(xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/img/sprite.svg#in_round")
+
+    div.footer-pages__bottom
+        div.footer-bottom-left Я веб-разработчик из г. Геленджика и этот сайт я сделал в рамках обучения в Школе онлайн-образования LoftSchool.            
+        div.footer-bottom-right &copy Максим Рудик | создано с любовью в Loftschool | 2016
+            

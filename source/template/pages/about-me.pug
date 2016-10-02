@@ -1,0 +1,27 @@
+extends ../common/template-about
+
+block content
+    section.about-text
+        div.about-text__section-left
+            div.dash-text.dash-text--h1.about-me-h1 Обо мне
+            div.about-text__avatar
+                img(src="assets/img/me-about.png")                      
+            div.dash-text.dash-text--h3.about-who-h3 Кто я
+            p.about-text__content Я менеджер из г. Геленджика. Также можно сказать, что я прораб из г. Ростова-на-Дону. Хочу стать веб-разработчиком, организовать студию или быть фрилансером, что по-моему где-то рядом. 
+            p.about-text__content Раньше увлекался музыкой, теперь увлекся йогой. Заметил, что когда занялся йогой, перестала раздражать музыка.
+        div.about-text__section-right
+            div.dash-text.dash-text.dash-text--h1 Чем я могу быть вам полезен
+            p.about-text__content В веб-разработке пока что ничем. Я учусь, времени не хватает, навыков сосредоточенной работы не хватает, но это неважно, все будет. Будет верстка, какой-нибудь из js-фреймворков, и пара популярных CMS. Если всем этим владеть на должном уровне, без работы не останешься.
+            include ../common/about-me/svg-skills
+    section.contacts-map 
+        include ../common/about-me/contacts-board       
+        div.google-map(id="map")
+                
+    script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADBkK0q02rT0ZN2wCEwIdTvmmHcG5AuP4&callback=initMap")
+
+    //- script(async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap")
+    include ../common/footer-about-me
+    
+
+
+

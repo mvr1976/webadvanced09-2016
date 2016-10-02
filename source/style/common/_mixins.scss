@@ -1,0 +1,56 @@
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+@mixin dashesSmall(){
+	&:before,
+    &:after {
+        content: "";
+        display: block;
+        width: 15px;
+        height: 3px;
+        background: #777;
+        position: absolute;
+    }
+    &:before{
+    	top: 40%;
+    	left: -25px;
+    }
+    &:after{
+    	top: 40%;
+    	right: -25px;
+    }
+}
+@mixin dashesBig(){
+	&:before,
+    &:after {
+        content: "";
+        display: block;
+        width: 25px;
+        height: 5px;
+        background: #777;
+        position: absolute;
+    }
+    &:before{
+    	top: 40%;
+    	left: -35px;
+    }
+    &:after{
+    	top: 40%;
+    	right: -35px;
+    }
+}
+@mixin absolutPos(){
+	position: absolute;
+	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+}
+
+

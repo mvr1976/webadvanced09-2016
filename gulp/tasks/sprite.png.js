@@ -8,9 +8,9 @@ module.exports = function() {
                 imgName: 'sprite.png',
                 cssName: 'sprite.css',
                 imgPath: '../img/sprite.png'
-            }))      
-      spriteData.img.pipe($.gulp.dest($.config.root + '/assets/img/'))
-      spriteData.css.pipe($.gulp.dest($.config.root + '/assets/css/'))
+            }))  
+      spriteData.img.pipe($.gulp.dest($.config.root + '/assets/img/'));
+      spriteData.css.pipe($.gulp.dest($.config.root + '/assets/css/'));
       cb();
   })
 };

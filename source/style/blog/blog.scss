@@ -1,0 +1,68 @@
+@import '../_mixins.scss';
+.blog-wrapper{
+	@include clearfix();
+	box-sizing: border-box;
+}
+.blog-nav-wrapper{
+	width: 30%;
+	float: left;
+	
+}
+.blog-content-wrapper{
+	width: 70%;
+	float: left;
+}
+.blog-content {
+	color: $heading;
+	& p{
+		padding: 0 50px;
+		line-height:1.5;
+	}
+	& h2{
+		padding: 0 50px;
+		font-family: 'bernier_regularregular';
+		font-size: 2.5em;
+	}
+	
+}
+.blog-nav{
+	// display: none;
+	position: relative;
+	// background: $base-green;	
+	padding: 10px 20px;
+	margin-top: 20px;	
+}
+.blog-nav__list{
+	text-align: right;
+}
+.hide-button{
+	display: none;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: $base-green;
+	position: absolute;
+	top: 44%;
+	right: - 17px;
+}
+
+.blog-nav__item{
+	margin: 20px 0;
+	
+
+}
+.blog-nav__link{
+	font-size: 1.1em;
+	letter-spacing: 1.5px;
+	padding:10px 5px 10px 0;	
+	color: $heading;
+	&.active{
+		border-right: 2px solid $base-green;
+		color: $base-green;
+	}	
+}
+.blog-article{
+	span{
+		color:$base-green;
+	}
+}

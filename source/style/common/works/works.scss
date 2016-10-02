@@ -1,0 +1,145 @@
+.my-works__img-top{
+	display: block;
+	margin: 0 auto;
+}
+.slider-img-container img{
+	display: block;
+	width: 100%;
+	max-width: 200px;
+	margin: 0 auto;	
+}
+.my-works__tech-details{
+	margin-top: 20px;
+	padding: 10px 0;
+	text-align: center;
+	color: $base-green;
+	text-transform: uppercase;
+	border-top: 1px solid $base-green;
+	border-bottom: 1px solid $base-green;
+}
+.my-works__slide-link{
+	margin: 20px auto;
+	width: 160px;
+	padding: 10px 20px;
+	text-align: center;
+	color: #fff;
+	border-radius: 3px;
+	background-color: $base-green;
+}
+.my-works__sliders-bottom{
+	@include clearfix();
+}
+
+.my-works__slider-left,.my-works__slider-right{
+	position: relative;
+	width: 50%;
+	float:left;	
+}
+.feedback-1__tutor-avatar{	
+	display: flex;
+	width: 85%;
+	margin: 0 auto;
+}
+.tutor-img-container{
+	width: 30%;
+}
+.tutor-img{
+	// display: block;
+	
+	// float: left;
+}
+.tutor-info{
+	width: 70%;
+	flex:1;
+	// float: left;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.tutor-info__name{
+    
+}                          
+.tutor-info__position{
+
+}
+.works.feedback{
+	background: url(../img/form-bg.jpg) center;
+	background-size: cover;
+	@include clearfix();
+}
+.contact-form{
+	@include clearfix;
+	position: relative;
+	overflow: hidden;
+	width: 300px;
+	margin: 30px auto;	
+	border-radius: 5px;
+	&:before{
+  		content:"";
+  		position: absolute;
+  		top:0;
+  		left:0;
+  		width: 300px;
+  		height: 210px;
+  		background: rgba(255,255,255,.7);  		
+		-webkit-filter: blur(70px);  
+  		filter: blur(70px);  		
+  	}
+}
+.title-dashes.title-dashes-form{
+	margin-top:20px;
+}
+.contact-form__label{
+	display: block;
+	z-index:1;
+}
+.contact-form__input,.contact-form__textarea{
+	display: block;
+	position: relative;
+	width: 90%;
+	margin: 10px auto 0;
+	border:0;
+	border-radius: 3px;
+	// border-width:0;
+	// border-style:none;
+	// border-color:none;
+	outline: none;
+	text-indent: 20px;
+	padding: 10px 0;
+	z-index:10;
+}
+.contact-form__textarea{
+	resize:none;
+}
+.contact-form__buttons{
+	display: table;
+	width: 100%;
+	margin-top: 10px;
+}
+.button_item{
+	display: table-cell;
+	border:0;
+	cursor: pointer;
+	width: 50%;
+	background: $base-green;
+	color: #fff;
+	padding: 10px 0;
+	border-right: 1px solid #fff;
+	&:last-child{
+		border: none;
+	}
+	&:hover{
+		background: $base-green_hover;
+	}	
+}
+.contact-form-bg{
+
+}
+.button-up.fa.fa-chevron-up.fa-2x{
+	display: block;
+	margin: 20px auto;
+	cursor: pointer;
+	color: #fff;
+}
+

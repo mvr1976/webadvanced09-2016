@@ -1,0 +1,24 @@
+.dash-text{
+	text-transform: uppercase;
+	margin: 0 25px;
+	font-family: 'bernier_regularregular';	
+}
+.dash-text.dash-text--h1{
+	display: table;
+	margin: 0 auto;
+	margin-top: 30px;
+	position: relative;
+	font-size: 2.2em;
+	color:#425A64;
+	@include dashesBig();
+}
+.dash-text.dash-text--h3{
+	display: table;
+	margin: 0 auto;
+	margin-top: 30px;
+	position: relative;
+	font-size: 1.2em;
+	color: $text;
+	@include dashesSmall();
+}
+

@@ -1,0 +1,37 @@
+.footer-pages{
+	color: rgba(255,255,255,.5);
+	background-color: $footer-bg;
+	text-align: center;
+	position: relative;
+	height: 198px;
+	z-index: 10;
+}
+.footer-pages--map{
+	background-color: rgba(255,255,255, .3);
+}
+.footer-pages__top{
+	border-bottom: 1px solid rgba(255,255,255,.3);
+	@include clearfix();
+}
+.footer-pages__nav{
+	margin-top: 20px;
+}
+.footer-pages__list{
+
+}
+.footer-pages__item{
+
+}
+.footer-pages__link{
+
+}
+.footer-pages__bottom{
+	@include clearfix();
+	padding: 0 20px;
+}
+.footer-bottom-left{
+	margin-top: 20px;
+}            
+.footer-bottom-right{
+	margin: 20px 0;
+}

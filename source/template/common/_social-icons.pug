@@ -1,0 +1,5 @@
+ul.social-icons-list.social-icons-list--welcome
+    each val, index in {"fa fa-vk fa-2x":'https://vk.com',"fa fa-github-alt fa-2x":'https://github.com',"fa fa-linkedin fa-2x":'https://linkedin.com'}
+        li.social-icons__item
+            a.social-icons__link(href= val, target= "blank")
+                i.social-icons__pic.social-icons__pic--pages(class= index aria-hidden="true") 

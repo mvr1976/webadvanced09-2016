@@ -1,0 +1,16 @@
+.login-button{	
+	margin: 20px auto;
+	width: 145px;
+	height: 40px;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	color: #fff;
+	text-align: center;
+	line-height: 40px;
+	cursor:pointer;
+	z-index: 1;
+	&:hover{
+		background-color:#fff;
+		color: $base-green;
+	}
+}

@@ -1,0 +1,45 @@
+extends ../common/template-pages
+
+block content
+    div.blog-wrapper
+        div.blog-nav-wrapper
+            aside.blog-nav
+                div.hide-button
+                ul.blog-nav__list
+                    li.blog-nav__item
+                        a.blog-nav__link.active(href="#one") Самое важное в SASS                
+                    li.blog-nav__item
+                        a.blog-nav__link(href="#two") Приемы верстки, без которых не обходится ни один сайт               
+                    li.blog-nav__item
+                        a.blog-nav__link(href="#three") Джентльменский набор плагинов Gulp
+               
+                    li.blog-nav__item
+                        a.blog-nav__link(href="#four") Почему я выбрал Jade
+        
+        div.blog-content-wrapper
+            section.blog-content(data-section="one")           
+                article.blog-article.active
+                    h2 Самое важное в SASS
+                    p
+                        span 22 ноября 2016
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus autem facilis optio doloremque maxime velit dolores numquam laborum exercitationem hic blanditiis quisquam at ducimus, temporibus aperiam quod sit sed praesentium. Blanditiis unde molestiae accusamus perspiciatis recusandae, neque culpa, odit ducimus voluptas corporis tenetur saepe dolor voluptate eligendi?
+                    p Veniam eaque odio ut aperiam, esse nisi saepe ea quod laborum numquam, unde cumque magni sequi necessitatibus enim. Inventore quos commodi animi totam sed consectetur reiciendis quae aliquam facere quia. Voluptas cum officia ex quo, facere modi debitis reprehenderit provident ab et minus sit nemo molestiae voluptate velit possimus aspernatur quam dolor. Rerum.
+            section.blog-content(data-section="two")                              
+                article.blog-article
+                    h2 Приемы верстки, без которых не обходится ни один сайт
+                    p
+                        span 23 ноября 2016
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus autem facilis optio doloremque maxime velit dolores numquam laborum exercitationem hic blanditiis quisquam at ducimus, temporibus aperiam quod sit sed praesentium. Blanditiis unde molestiae accusamus perspiciatis recusandae, neque culpa, odit ducimus voluptas corporis tenetur saepe dolor voluptate eligendi? Veniam eaque odio ut aperiam, esse nisi saepe ea quod laborum numquam, unde cumque magni sequi necessitatibus enim. Inventore quos commodi animi totam sed consectetur reiciendis quae aliquam facere quia. Voluptas cum officia ex quo, facere modi debitis reprehenderit provident ab et minus sit nemo molestiae voluptate velit possimus aspernatur quam dolor. Rerum.
+            section.blog-content(data-section="three")
+                article.blog-article
+                    h2 Джентльменский набор плагинов Gulp
+                    p
+                        span 23 ноября 2016
+                    p . Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus autem facilis optio doloremque maxime velit dolores numquam laborum exercitationem hic blanditiis quisquam at ducimus, temporibus aperiam quod sit sed praesentium. Blanditiis unde molestiae accusamus perspiciatis recusandae, neque culpa, odit ducimus voluptas corporis tenetur saepe dolor voluptate eligendi? Veniam eaque odio ut aperiam, esse nisi saepe ea quod laborum numquam, unde cumque magni sequi necessitatibus enim. Inventore quos commodi animi totam sed consectetur reiciendis quae aliquam facere quia. Voluptas cum officia ex quo, facere modi debitis reprehenderit provident ab et minus sit nemo molestiae voluptate velit possimus aspernatur quam dolor. Rerum.
+            section.blog-content(data-section="four")
+                article.blog-article
+                    h2 Почему я выбрал Jade
+                    p
+                        span 23 ноября 2016
+                    p . Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus autem facilis optio doloremque maxime velit dolores numquam laborum exercitationem hic blanditiis quisquam at ducimus, temporibus aperiam quod sit sed praesentium. Blanditiis unde molestiae accusamus perspiciatis recusandae, neque culpa, odit ducimus voluptas corporis tenetur saepe dolor voluptate eligendi? Veniam eaque odio ut aperiam, esse nisi saepe ea quod laborum numquam, unde cumque magni sequi necessitatibus enim. Inventore quos commodi animi totam sed consectetur reiciendis quae aliquam facere quia. Voluptas cum officia ex quo, facere modi debitis reprehenderit provident ab et minus sit nemo molestiae voluptate velit possimus aspernatur quam dolor. Rerum.
+    include ../common/footer-pages

@@ -1,0 +1,44 @@
+@import '../_mixins.scss';
+.about-text__skills{
+	width: 85%;
+	margin: 0 auto;
+}
+.skills-title{
+	text-align: left;
+	text-transform: capitalize;
+	font-size: 1.5em;
+}
+.skills-list {	
+	margin: 30px auto;
+	overflow: hidden;
+}
+.skills-item{
+
+	position: relative;
+	margin: 10px;
+	&:first-child{
+		margin-left: 10px;
+	}
+}
+.skill-name{
+	@include absolutPos();
+}
+.common_circle{	
+	fill:none;
+	stroke-width:20px;
+}
+.sector{
+	stroke-dasharray: 408;
+	// stroke-dashoffset: 240;
+	transition: all 1s;
+}
+.sector-html{stroke-dashoffset: 220;}
+.sector-css{stroke-dashoffset: 240;}
+.sector-js{stroke-dashoffset: 300;}
+.sector-php{stroke-dashoffset: 350;}
+.sector-mysql{stroke-dashoffset: 380;}
+.sector-node{stroke-dashoffset: 380;}
+.sector-mongo{stroke-dashoffset: 380;}
+.sector-git{stroke-dashoffset: 280;}
+.sector-gulp{stroke-dashoffset: 250;}
+.sector-bower{stroke-dashoffset: 230;}

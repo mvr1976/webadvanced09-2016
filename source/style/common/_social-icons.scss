@@ -1,0 +1,16 @@
+.header-socials-container{
+	position: absolute;
+	left: 30px;
+	top: 30px;
+}
+.social-icons-list{	
+	
+}    
+.social-icons__item{
+	margin-left: 20px;
+	&:first-child{
+		margin-left: 0;
+	}
+}
+.social-icons__link{}
+.social-icons__img{}

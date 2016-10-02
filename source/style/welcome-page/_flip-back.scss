@@ -1,0 +1,118 @@
+.flip-side--back{
+	position: absolute;
+	top: 0;
+	left: 0;	
+	background: rgba(255,255,255,.7);
+  	transform: rotateY(180deg);
+	transition: 1s;
+	border-radius: 5px;	
+}
+.flip-side--back__title{
+	margin: 35px 0;
+	color: $heading;
+}
+.flip-side--back__form{
+	margin-bottom: 20px;
+	position: relative;
+	.label{
+		// display: inline-block;
+		// margin-bottom: 15px;
+	}
+	.input{		
+		width:87%;
+		height:45px;
+		text-indent: 60px;
+		border-radius: 5px;
+		background-color:#fff;		
+		border: 0;
+	}
+	.fa.fa-user{
+		position: absolute;
+		left: 24px;
+		top: 0;
+		color: #C5CBCE;
+		background-color: #F0EFEA;
+		padding: 16px;
+		border-radius: 5px 0 0 5px;
+	}
+	.login-key{
+		position: absolute;
+		left: 24px;
+		top: 0;
+		color: #C5CBCE;
+		background-color: #F0EFEA;
+		padding: 16px 15px;
+		border-radius: 5px 0 0 5px;
+	}
+}
+
+
+
+.flip-side--back__check{
+	position: relative;
+	margin-bottom: 20px;
+	color: $text;
+	.fa.fa-check-square{
+		background-color: $base-green;
+		color: $base-green;
+		position:absolute;
+		top:1px;
+		left:144px;
+	}
+}        
+.flip-side--back__check-2{
+	font-family: 'robotomedium';
+	margin-bottom: 20px;
+	color: $text;
+
+} 
+.flip-side--back__radio{
+	margin-bottom: 20px;
+	color: $text;
+
+}
+//radio-buttons
+.rad + label {
+  cursor: pointer;
+}
+.rad:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+.rad:not(checked) + label {
+  position: relative;
+  padding: 0 0 0 35px;
+}
+.rad:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #C3CBCE;
+  border-radius: 50%;
+  background: #FFF;
+}
+.rad:not(checked) + label:after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: $base-green;  
+  opacity: 0;
+  transition: all .2s;
+}
+// .rad:checked + label:after {
+//   opacity: 1;
+// }
+.radio.radio-yes{
+	color:$base-green;
+}
+//end of radio-buttons
+.flip-side__nav-item.flip-side--back__nav-item{
+	width: 50%;
+}

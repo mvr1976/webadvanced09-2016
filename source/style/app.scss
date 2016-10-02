@@ -1,6 +1,54 @@
+$base-green: #04AA96;
+$base-green_hover: #0c8980;
+$footer-bg: #555b5e;
+$heading: #425A64;
+$text: #727F85;
+
+html {
+height:100%;
+box-sizing: border-box;
+}
+*, *:before, *:after {
+box-sizing: inherit;
+}
 body {
-  margin: 0;
+  // display: flex;
+  // flex-direction: column;
+  height: 100%;
+  font-size: 14px;
+  font-family: 'robotoregular';  
 }
 
-@import 'common/greating';
+ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;	
+}
+li{
+	display: inline-block;
+}
+a{
+	text-decoration: none;
+}
+.dash-text{
+	color:$heading;
+}
+
+@import '_mixins.scss';
+@import 'welcome-page/login-button';
+@import '_header-pages.scss';
+@import 'welcome-page/footer-welcome';
+@import 'welcome-page/_flip-front.scss';
+@import 'welcome-page/_flip-back.scss';
+@import '_social-icons.scss';
+@import '_title-dashes.scss';
+@import 'hamburger.scss';
+@import 'works/works.scss';
+@import 'avatar-block.scss';
+@import '_footer-pages.scss';
+@import 'about-me/about-me.scss';
+@import 'about-me/svg-skills.scss';
+@import 'about-me/contacts-board.scss';
+@import 'blog/blog.scss';
+@import 'modal-win.scss';
 @import '../../bower_components/font-awesome/scss/font-awesome.scss';

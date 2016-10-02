@@ -1,0 +1,33 @@
+.parallax-bg{	
+	position: relative;
+	background: url(../img/parallax-bg.jpg) center;
+	height: 100%;
+	@include clearfix();
+}
+.triangles-container{
+	width: 100%;
+	// height: 100px;
+	position: absolute;
+	bottom: -3px;
+	
+}
+.triangles{
+		// position: absolute;
+		// top: 0;
+		// left: 0;
+	}
+.button-down{
+	display: block;
+	position: absolute;
+	top: 45%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);	
+	z-index: 1;
+	color: #fff;
+	padding:5px;
+	cursor: pointer;
+	&:hover{
+		top: 50%;
+		transition: all .3s;
+	}
+}

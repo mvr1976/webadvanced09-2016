@@ -1,7 +1,15 @@
-extends ../_template
+extends ../common/_template
 
 block variables
-  - var title = 'Home page'
+  - var title = 'welcome';
 
-block content
-  include ../common/_greating
+block content        
+        include ../common/welcome-page/_button-login
+        div.flip-container
+            div.flip-card                
+                include ../common/welcome-page/_flip-front    
+                include ../common/welcome-page/_flip-back                
+        include ../common/welcome-page/_footer-welcome
+        
+  
+  

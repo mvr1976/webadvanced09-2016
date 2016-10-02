@@ -1,0 +1,30 @@
+.dash-text{
+	text-transform: uppercase;
+	margin: 0 25px;
+	font-family: 'bernier_regularregular';	
+}
+.dash-text.dash-text--h1{
+	display: table;
+	margin: 0 auto;
+	margin-top: 30px;
+	position: relative;
+	font-size: 2.2em;
+	@include dashesBig();
+}
+.dash-text.dash-text--h3{
+	display: table;
+	margin: 0 auto;
+	margin-top: 30px;
+	position: relative;
+	font-size: 1.2em;
+	@include dashesSmall();
+}
+// .dash-right__line{
+// 	position: absolute;
+//   	top: 50%;
+//   	left: 50%;
+//   	transform: translate(-50%, -50%);
+// 	width: 22px;
+// 	height: 5px;
+// 	background-color: #555;	
+// }

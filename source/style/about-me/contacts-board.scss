@@ -1,0 +1,33 @@
+.contacts-board{
+	position: absolute;	
+	top: 56px;
+	left:56px;	
+	width: 380px;
+	height: 380px;
+	border-radius: 5px;
+	font-size:1.8em;
+	z-index:1;
+	background: rgba(255,255,255,.7);
+    box-shadow: 0 0 15px 2px rgba(0,0,0,.2);
+   
+}
+.contacts-item{
+	display: block;
+	margin: 25px 0;
+	padding-left: 35px;
+}
+.contacts-link{
+	color: #455a64;    
+    vertical-align: middle;
+    // font-family: 'roboto-medium';
+    font-size: .6em;
+    .fa{
+	    color: $base-green;
+	    font-size: 1.2em;
+	    vertical-align: middle;
+	    margin-right: 10px;
+    }
+}
+.contacts-map{
+	position: relative;
+}

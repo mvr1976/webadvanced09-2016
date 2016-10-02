@@ -1,0 +1,61 @@
+extends ../common/template-pages
+
+block content    
+    section.works.my-works
+        div.my-works__title
+            svg(class="svg-works_header-dims svg_inner_works" width="505.101px" height="165.036px" viewBox="0 0 505.101 165.036")
+                use(xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/img/sprite.svg#works_header")           
+            div.dash-text.dash-text--h1.my-works-head Мои работы
+        div.my-works__slider-container                
+        div.my-works__slider-top
+            img.my-works__img-top(src="assets/img/printscreen4.jpg")
+        div.my-works__slide-description           
+            div.dash-text.dash-text.dash-text--h3 Мой предыдущий сайт-портфолио               
+            div.my-works__tech-details html, css, javascript
+            div.my-works__slide-link Посмотреть сайт
+        div.my-works__sliders-bottom
+            div.my-works__slider-left
+                div.slider-img-container
+                    img(src="assets/img/printscreen1.jpg")
+            div.my-works__slider-right
+                div.slider-img-container
+                    img(src="assets/img/printscreen2.jpg")
+    section.works.feedback
+        div.title-background-container
+            svg(class="svg-about_header-dims svg_about_people_say" width="498.161px" height="175.44px" viewBox="0 0 498.161 175.44")
+                    use(xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/img/sprite.svg#about_header")        
+            div.dash-text.dash-text--h1.talk-about-me Что обо мне говорят
+        div.feedbacks            
+            div.feedback-1
+                i(class="fa fa-quote-left fa-2x" aria-hidden="true")
+                blockquote Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых ночей и бессонных ночей!
+                div.feedback-1__tutor-avatar
+                    div.tutor-img-container
+                        img.tutor-img(src='assets/img/dima.jpg' alt='Да это же Дима!')
+                    div.tutor-info
+                        div.tutor-info__name Ковальчук Дмитрий                             
+                        div.tutor-info__position основатель LoftSchool
+            div.feedback-2
+                i(class="fa fa-quote-left fa-2x" aria-hidden="true")
+                blockquote Этот код выдержит любые испытания. Только пожалуйста, не загружайте этот сайт на слишком старых браузерах!
+                div.feedback-1__tutor-avatar
+                    div.tutor-img-container
+                        img.tutor-img(src='assets/img/zar.jpg' alt='Да это же Дима!')
+                    div.tutor-info
+                        div.tutor-info__name Зар Захаров                             
+                        div.tutor-info__position главный преподаватель
+        form.contact-form(id = "contact-form")
+            div.contact-form-bg
+            label.contact-form__label
+                div.dash-text.dash-text.dash-text--h3 Связаться со мной                
+            input.contact-form__input(type="text" name="name", placeholder="Имя" qtip-content="Впишите имя")
+            input.contact-form__input(type="text" name="email", placeholder="Email" qtip-content="Укажите емейл ")
+            textarea.contact-form__textarea(name="text", rows="7", placeholder="Ваше сообщение" qtip-content="Вы что-то сказали?")
+            div.contact-form__buttons
+                button.button_item(type="submit", class="button__submit") Отправить
+                button.button_item(type="reset", class="button__reset") Очистить
+        div.arrow-wrapper        
+            i.button-up(class="fa fa-chevron-up fa-2x" aria-hidden="true")
+    include ../common/footer-pages
+    
+    
